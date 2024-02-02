@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
 /* ---------------------navbar----------------- */
@@ -84,6 +85,7 @@ header nav {
   flex-direction: column;
   align-items: center;
   position: relative;
+  overflow-y: hidden;
   background-image: linear-gradient(
     to right,
     rgba(32, 40, 119, 0.95),
@@ -166,6 +168,12 @@ header nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-15px);
 }
 .icons-and-image {
   width: 100%;
@@ -244,11 +252,17 @@ header nav {
   font-size: 14px;
   margin: 50px 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease,
+    transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .only-images button:hover {
   border: 2px solid #6610f2;
   background-color: white;
   color: black;
+  transform: scale(1.05);
+  margin-bottom: 46px;
+  /* margin bottom buton hover olanda divin hereketinin qarsisini alir */
 }
 .only-text {
   width: 100%;
@@ -256,6 +270,13 @@ header nav {
 .header-text-in-pages {
   text-align: end;
   padding-right: 16px;
+}
+.left-side-text {
+  text-align: start;
+  padding-right: 0;
+}
+.left-side-text h2 {
+  padding-left: 16px;
 }
 .header-text-in-pages p {
   font-size: 28px;
@@ -272,6 +293,10 @@ header nav {
   text-align: end;
   padding-bottom: 30px;
 }
+.left-side-text-parts li {
+  justify-content: start;
+  text-align: start;
+}
 .text-parts li img {
   width: 34px;
   height: 34px;
@@ -279,6 +304,225 @@ header nav {
 .text-parts li p {
   color: #707070;
 }
+.more-button-element,
+.least-button-element {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more-button-element button,
+.least-button-element button {
+  border-radius: 30px;
+  border: 2px solid #6610f2;
+  background-color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.more-button-element button:hover,
+.least-button-element button:hover {
+  transform: scale(1.05);
+}
+.more-button-element button p,
+.least-button-element button p {
+  color: #6610f2;
+  padding: 10px 35px;
+}
+.more-button-element button p:hover,
+.least-button-element button p:hover {
+  color: white;
+}
+.more-button-element button:hover,
+.least-button-element button:hover {
+  background-color: #6610f2;
+}
+.fa-arrow-down,
+.fa-arrow-up {
+  padding: 0 5px;
+}
+/* --------------------------packets-------------------- */
+.packets-container {
+  width: 100%;
+}
+.only-background-shape {
+  background-image: url(./Images/shape-bg-right.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 40px;
+}
+.packets-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.only-text-packets {
+  text-align: center;
+  padding: 50px 16px 30px 16px;
+}
+.only-text-packets h2 {
+  padding-bottom: 20px;
+}
+.only-text-packets p {
+  line-height: 25px;
+  color: #707070;
+}
+.default-normal-card,
+.default-hover-card {
+  width: 90%;
+  height: 800px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #e7e7e7;
+}
+.default-hover-card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-top: 4px solid #9629e6;
+}
+.default-normal-card:hover {
+  border-top: 4px solid #9629e6;
+}
+.default-normal-card p,
+.default-hover-card p {
+  color: rgb(132, 146, 166);
+}
+.default-normal-card h4,
+.default-hover-card h4 {
+  padding: 30px 0;
+  font-size: 20px;
+}
+.basic-image-element {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.basicImage {
+  width: 120px;
+}
+.about-cards-packets {
+  padding: 30px;
+}
+.about-cards-packets p {
+  font-size: 14px;
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+.more-information-element {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more-information-element p {
+  font-size: 14px;
+  color: rgb(132, 146, 166);
+  padding: 0 16px;
+  text-align: center;
+  line-height: 25px;
+}
+.more-information-element p a {
+  color: #9629e6;
+  cursor: pointer;
+  text-decoration: none;
+}
+.default-hover-card {
+  transform: scale(1.02);
+  transition: border-radius 0.3s ease;
+}
+.default-normal-card {
+  transition: transform 0.9s ease, box-shadow 0.9s ease;
+}
+.default-normal-card:hover {
+  transform: scale(1.02);
+  transition: border-radius 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform 0.9s ease;
+  border-radius: 20px;
+}
+.default-hover-card:hover {
+  border-radius: 20px;
+}
+/* -------------------contact---------------- */
+.contact-us-container {
+  background: #f4f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+.contact-texts {
+  padding: 0 16px;
+}
+.contact-texts h2 {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.contact-texts p {
+  color: #707070;
+  line-height: 25px;
+  font-size: 14px;
+}
+.contact-texts p:last-child {
+  padding: 20px 0;
+}
+.contact-texts p:last-child a {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.inputs-container {
+  width: 100%;
+}
+.inputs-container p {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 16px;
+  padding-bottom: 20px;
+}
+form {
+  padding: 0 16px;
+}
+form input {
+  display: block;
+  width: 100%;
+  padding: 17px 10px;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+form input:first-child {
+  margin-bottom: 30px;
+}
+form input:nth-child(4) {
+  margin-top: 30px;
+}
+form textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #e7e7e7;
+  padding: 10px 5px;
+}
+.send-button {
+  margin-top: 30px;
+  width: auto;
+  background-color: #6610f2;
+  color: white;
+  padding: 15px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.send-button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #6610f2;
+}
+/* ----------------------------------------------- */
 @media screen and (min-width: 471px) {
   .logoElement img {
     width: 200px;
@@ -325,6 +569,17 @@ header nav {
   }
   .header-text-in-pages p {
     font-size: 32px;
+  }
+  .only-text-packets h2 {
+    font-size: 35px;
+  }
+  .only-text-packets p {
+    font-size: 18px;
+    width: 570px;
+  }
+  .default-normal-card,
+  .default-hover-card {
+    width: 570px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -385,6 +640,21 @@ header nav {
   }
   .only-images button {
     margin-top: 100px;
+  }
+  .packets-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+  }
+  .default-normal-card,
+  .default-hover-card {
+    width: 230px;
+    height: 920px;
+  }
+  .only-text-packets p {
+    width: 480px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -450,11 +720,18 @@ header nav {
   }
   .only-text {
     padding-right: 16px;
+    height: 650px;
+  }
+  .only-text-left-side {
+    padding-left: 16px;
   }
   .header-text-in-pages {
     padding-right: 0;
   }
   .header-text-in-pages p {
+    padding-left: 0;
+  }
+  .left-side-text h2 {
     padding-left: 0;
   }
   .text-parts {
@@ -466,6 +743,14 @@ header nav {
   }
   .only-size {
     width: 992px;
+  }
+  .only-text-packets p {
+    width: 100%;
+  }
+  .default-normal-card,
+  .default-hover-card {
+    width: 300px;
+    height: 850px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -495,16 +780,28 @@ header nav {
   .services-cards {
     width: 1240px;
   }
+  .texts-in-left {
+    width: 102%;
+  }
   .left-images {
-    width: 400px;
+    width: 450px;
   }
   .only-size {
     width: 1180px;
-  }
-  .only-size {
     gap: 300px;
   }
   .only-text {
     padding-right: 16px;
+  }
+  .only-images-left-side {
+    padding-left: 16px;
+  }
+  .only-background-shape {
+    width: 103%;
+  }
+  .default-normal-card,
+  .default-hover-card {
+    width: 370px;
+    height: 830px;
   }
 }

@@ -1,5 +1,4 @@
 window.addEventListener("scroll", function () {
-  // Sadece ekran genişliği 992px veya daha büyükse çalışacak
   if (window.innerWidth >= 992) {
     var header = document.querySelector("header");
     header.style.transition = "background-color 0.3s";
@@ -11,3 +10,43 @@ window.addEventListener("scroll", function () {
     }
   }
 });
+// ----------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  const p4 = document.getElementsByClassName("p4");
+  const p5 = document.getElementsByClassName("p5");
+  const leastButton = document.getElementsByClassName(
+    "least-button-element"
+  )[0];
+
+  Array.from(p4).forEach((element) => (element.style.display = "none"));
+  Array.from(p5).forEach((element) => (element.style.display = "none"));
+  leastButton.style.display = "none";
+});
+
+function showElements() {
+  const p4 = document.getElementsByClassName("p4");
+  const p5 = document.getElementsByClassName("p5");
+  const moreButton = document.getElementsByClassName("more-button-element")[0];
+  const leastButton = document.getElementsByClassName(
+    "least-button-element"
+  )[0];
+
+  Array.from(p4).forEach((element) => (element.style.display = "flex"));
+  Array.from(p5).forEach((element) => (element.style.display = "flex"));
+  moreButton.style.display = "none";
+  leastButton.style.display = "flex";
+}
+
+function hiddenElement() {
+  const p4 = document.getElementsByClassName("p4");
+  const p5 = document.getElementsByClassName("p5");
+  const moreButton = document.getElementsByClassName("more-button-element")[0];
+  const leastButton = document.getElementsByClassName(
+    "least-button-element"
+  )[0];
+
+  Array.from(p4).forEach((element) => (element.style.display = "none"));
+  Array.from(p5).forEach((element) => (element.style.display = "none"));
+  moreButton.style.display = "flex";
+  leastButton.style.display = "none";
+}
