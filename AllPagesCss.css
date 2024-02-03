@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+/* ---------------------navbar----------------- */
+header {
+  width: 100%;
+  background-color: #202877;
+}
+header nav {
+  padding: 16px;
+  position: relative;
+}
+.logoElement img {
+  width: 150px;
+  cursor: pointer;
+}
+.logoElement p {
+  color: white;
+  position: absolute;
+  top: 43px;
+  left: 57px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+/* ------------------------main------------------ */
+.header-text {
+  padding: 50px 16px 30px 16px;
+}
+.header-text h2 {
+  padding-bottom: 15px;
+  text-align: center;
+}
+.Hr-header-text h2 {
+  text-align: start;
+}
+.header-text p {
+  color: #707070;
+  line-height: 25px;
+  text-align: justify;
+  font-weight: 100;
+  font-size: 14px;
+}
+.check-box-and-texts {
+  list-style: none;
+  padding: 0 16px;
+}
+.check-box-and-texts li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.check-box-and-texts li img {
+  width: 30px;
+  height: 30px;
+}
+.check-box-and-texts li p {
+  font-weight: 100;
+  color: #707070;
+  font-size: 14px;
+  width: 100%;
+  padding-left: 5px;
+  line-height: 25px;
+}
+.only-images-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 16px;
+  gap: 10px;
+}
+.only-images-container img {
+  width: 100%;
+}
+.phones-container {
+  padding: 0 16px;
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+/* -------------------footer------------------------- */
+footer {
+  width: 100%;
+}
+.footer-element {
+  background-image: linear-gradient(
+    to right,
+    rgba(32, 40, 119, 0.95),
+    rgba(55, 46, 149, 0.95),
+    rgba(83, 49, 177, 0.9),
+    rgba(114, 48, 205, 0.85),
+    rgba(150, 41, 230, 0.95)
+  );
+}
+.footer-wrapper {
+  padding: 30px 16px;
+  width: 100%;
+  margin: auto;
+}
+.mstock-footer-logo img {
+  width: 280px;
+}
+.contact-informations {
+  padding-top: 20px;
+  color: white;
+  gap: 10px;
+}
+.mail-and-web-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.mail-element li:first-child {
+  padding-bottom: 20px;
+}
+.mail-element li:first-child p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.mail-element li:last-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.mail-element li:last-child img {
+  width: 20px;
+}
+.mail-element li:last-child p {
+  font-size: 14px;
+}
+.web-element-first li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.web-element-first li img {
+  width: 20px;
+}
+.web-element-first li p {
+  font-size: 14px;
+}
+.web-element-second {
+  display: none;
+}
+.sosial-network {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+.sosial-network li img {
+  width: 15px;
+}
+.footer-text {
+  padding: 20px 16px;
+}
+.footer-text p {
+  color: #707070;
+  font-size: 14px;
+  text-align: center;
+  line-height: 25px;
+}
+.footer-text p a {
+  color: #3b546e;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 471px) {
+  .logoElement img {
+    width: 200px;
+  }
+  .logoElement p {
+    top: 53px;
+    left: 70px;
+    font-size: 16px;
+  }
+  /* ------------------footer----------------- */
+  .contact-informations {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .web-element-first {
+    display: none;
+  }
+  .web-element-second {
+    display: block;
+  }
+  .web-element-second li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .web-element-second li img {
+    width: 20px;
+  }
+  .web-element-second li p {
+    font-size: 14px;
+  }
+  .sosial-network {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 570px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  header nav {
+    width: 570px;
+  }
+  /* --------------------main----------------- */
+  .header-text h2 {
+    font-size: 35px;
+  }
+  .text-and-images-container {
+    width: 570px;
+    margin: auto;
+  }
+  .only-images-container {
+    width: 570px;
+    margin: auto;
+  }
+  /* ------------------footer----------------- */
+  .footer-wrapper {
+    width: 570px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header nav {
+    width: 768px;
+  }
+  .logoElement img {
+    width: 300px;
+  }
+  .logoElement p {
+    top: 75px;
+    left: 98px;
+    font-size: 14px;
+  }
+  /* --------------------main------------------ */
+  main {
+    margin: auto;
+    display: flex;
+    align-items: start;
+    width: 768px;
+  }
+  .text-and-images-container {
+    width: 50%;
+    margin-top: 0;
+  }
+  .hr-text-images-container {
+    margin-bottom: 0;
+  }
+  .only-images-container {
+    width: 50%;
+    height: 1180px;
+  }
+  .only-cars-images-container {
+    height: 900px;
+  }
+  .only-aptel-images-container {
+    height: 1050px;
+    padding-top: 70px;
+  }
+  /* ------------------footer----------------- */
+  .footer-wrapper {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    background-image: linear-gradient(
+      to right,
+      rgba(32, 40, 119, 0.95),
+      rgba(55, 46, 149, 0.95),
+      rgba(83, 49, 177, 0.9),
+      rgba(114, 48, 205, 0.85),
+      rgba(150, 41, 230, 0.95)
+    );
+  }
+  header nav {
+    width: 992px;
+  }
+  /* --------------------main------------------ */
+  main {
+    width: 992px;
+  }
+  .only-images-container {
+    width: 50%;
+    height: 1000px;
+  }
+  .only-cars-images-container {
+    height: 850px;
+  }
+  .only-aptel-images-container {
+    height: 850px;
+  }
+  /* ------------------footer----------------- */
+  .footer-element {
+    padding: 20px 0;
+  }
+  .footer-wrapper {
+    width: 992px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .mstock-footer-logo img {
+    width: 220px;
+  }
+  .contact-informations {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header nav {
+    width: 1200px;
+  }
+  /* --------------------main------------------ */
+  main {
+    width: 1200px;
+  }
+  .header-text {
+    padding: 0px 16px 30px 16px;
+  }
+  main {
+    padding-top: 100px;
+  }
+  .only-images-container {
+    width: 50%;
+    padding: 0;
+    height: 1200px;
+  }
+  .only-hr-images-container {
+    height: 950px;
+    padding-top: 20px;
+  }
+  .only-cars-images-container {
+    padding-top: 25px;
+  }
+  .only-cars-images-container {
+    height: 700px;
+  }
+  .only-aptel-images-container {
+    height: 840px;
+    padding-top: 20px;
+  }
+  /* ------------------footer----------------- */
+  .footer-wrapper {
+    width: 1200px;
+  }
+  .mstock-footer-logo img {
+    width: 250px;
+  }
+  .contact-informations {
+    width: 800px;
+  }
+}
