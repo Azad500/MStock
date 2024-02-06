@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  /* -------------color-and-background--------------- */
+  --white-color-for-texts: white;
+  /* -------------images-width--------------- */
+  --navbar-text-res1200: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  /* ----------------navbar---------------- */
+  header nav {
+    width: 1200px;
+  }
+  .menuForDekstop {
+    font-size: var(--navbar-text-res1200);
+    gap: 30px;
+  }
+  /* ----------------main---------------- */
+  .text-and-computer-elements {
+    width: 1180px;
+  }
+  .entry-text-mstock {
+    width: 500px;
+  }
+  .computer-image img {
+    width: 600px;
+  }
+  /* ----------------about-us---------------- */
+  .about-us div p {
+    width: 100%;
+  }
+  /* ----------------services---------------- */
+  .card h4 {
+    width: 70%;
+  }
+  .card {
+    width: 260px;
+    height: 400px;
+  }
+  .services-cards {
+    width: 1240px;
+  }
+  /* ----------------other-pages---------------- */
+  .texts-in-left {
+    width: 102%;
+  }
+  .left-images {
+    width: 450px;
+  }
+  .only-size {
+    width: 1180px;
+  }
+  .only-text {
+    padding-right: 16px;
+  }
+  /* ----------------packets---------------- */
+  .only-background-shape {
+    width: 103%;
+  }
+  .default-normal-card,
+  .default-hover-card {
+    width: 370px;
+    height: 830px;
+  }
+  /* ----------------contact---------------- */
+  form input {
+    width: 47.6%;
+  }
+  .contact-texts {
+    width: 469px;
+  }
+  .inputs-container {
+    width: 731px;
+  }
+  /* ----------------footer---------------- */
+  .footer-wrapper {
+    width: 1200px;
+  }
+  .mstock-footer-logo img {
+    width: 250px;
+  }
+  .contact-informations {
+    width: 800px;
+  }
+}

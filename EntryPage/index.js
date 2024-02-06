@@ -1,3 +1,4 @@
+// ---------------------------navbar-background-color---------------
 window.addEventListener("scroll", function () {
   if (window.innerWidth >= 992) {
     var header = document.querySelector("header");
@@ -10,7 +11,7 @@ window.addEventListener("scroll", function () {
     }
   }
 });
-// ----------------------------------
+// -----------------more-button-in-projects-----------------------
 document.addEventListener("DOMContentLoaded", function () {
   const p4 = document.getElementsByClassName("p4");
   const p5 = document.getElementsByClassName("p5");

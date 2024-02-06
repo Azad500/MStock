@@ -5,25 +5,49 @@
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+:root {
+  /* -------------------colors--------------------- */
+  --mobile-navbar-background-color-all-pages: #202877;
+  --white-texts-color: white;
+  --same-texts-color: #707070;
+  --footer-last-text: #3b546e;
+  --footer-sosial-network-color: rgba(255, 255, 255, 0.821);
+  --linear-gradient-background-color: linear-gradient(
+    to right,
+    rgba(32, 40, 119, 0.95),
+    rgba(55, 46, 149, 0.95),
+    rgba(83, 49, 177, 0.9),
+    rgba(114, 48, 205, 0.85),
+    rgba(150, 41, 230, 0.95)
+  );
+  /* -------------------images-width--------------------- */
+  --navbar-logo-image-all-pages-resmobile: 150px;
+  --navbar-logo-image-all-pages-res768: 300px;
+  --footer-logo-image-all-pages-resmobile: 280px;
+  /* -------------------font-size--------------------- */
+  --logo-under-text-resmobile: 13px;
+  --same-texts: 14px;
+  --support-text-in-footer: 18px;
+}
 /* ---------------------navbar----------------- */
 header {
   width: 100%;
-  background-color: #202877;
+  background-color: var(--mobile-navbar-background-color-all-pages);
 }
 header nav {
   padding: 16px;
   position: relative;
 }
 .logoElement img {
-  width: 150px;
+  width: var(--navbar-logo-image-all-pages-resmobile);
   cursor: pointer;
 }
 .logoElement p {
-  color: white;
+  color: var(--white-texts-color);
   position: absolute;
   top: 43px;
   left: 57px;
-  font-size: 14px;
+  font-size: var(--logo-under-text-resmobile);
   letter-spacing: 0.5px;
 }
 /* ------------------------main------------------ */
@@ -33,16 +57,17 @@ header nav {
 .header-text h2 {
   padding-bottom: 15px;
   text-align: center;
+  font-weight: 500;
 }
 .Hr-header-text h2 {
   text-align: start;
 }
 .header-text p {
-  color: #707070;
+  color: var(--same-texts-color);
   line-height: 25px;
   text-align: justify;
-  font-weight: 100;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: var(--same-texts);
 }
 .check-box-and-texts {
   list-style: none;
@@ -58,9 +83,9 @@ header nav {
   height: 30px;
 }
 .check-box-and-texts li p {
-  font-weight: 100;
-  color: #707070;
-  font-size: 14px;
+  font-weight: 400;
+  color: var(--same-texts-color);
+  font-size: var(--same-texts);
   width: 100%;
   padding-left: 5px;
   line-height: 25px;
@@ -90,14 +115,7 @@ footer {
   width: 100%;
 }
 .footer-element {
-  background-image: linear-gradient(
-    to right,
-    rgba(32, 40, 119, 0.95),
-    rgba(55, 46, 149, 0.95),
-    rgba(83, 49, 177, 0.9),
-    rgba(114, 48, 205, 0.85),
-    rgba(150, 41, 230, 0.95)
-  );
+  background-image: var(--linear-gradient-background-color);
 }
 .footer-wrapper {
   padding: 30px 16px;
@@ -105,7 +123,7 @@ footer {
   margin: auto;
 }
 .mstock-footer-logo img {
-  width: 280px;
+  width: var(--footer-logo-image-all-pages-resmobile);
 }
 .contact-informations {
   padding-top: 20px;
@@ -121,7 +139,7 @@ footer {
   padding-bottom: 20px;
 }
 .mail-element li:first-child p {
-  font-size: 18px;
+  font-size: var(--support-text-in-footer);
   font-weight: 600;
 }
 .mail-element li:last-child {
@@ -132,9 +150,17 @@ footer {
 .mail-element li:last-child img {
   width: 20px;
 }
-.mail-element li:last-child p {
-  font-size: 14px;
+.mail-element li:last-child a {
+  font-size: var(--same-texts);
+  text-decoration: none;
+  color: var(--footer-sosial-network-color);
+  cursor: pointer;
+  transition: color 0.5s ease;
 }
+.mail-element li:last-child a:hover {
+  color: var(--white-texts-color);
+}
+
 .web-element-first li {
   display: flex;
   align-items: center;
@@ -143,9 +169,17 @@ footer {
 .web-element-first li img {
   width: 20px;
 }
-.web-element-first li p {
-  font-size: 14px;
+.web-element-first li a {
+  font-size: var(--same-texts);
+  text-decoration: none;
+  color: var(--footer-sosial-network-color);
+  cursor: pointer;
+  transition: color 0.5s ease;
 }
+.web-element-first li a:hover {
+  color: var(--white-texts-color);
+}
+
 .web-element-second {
   display: none;
 }
@@ -161,13 +195,13 @@ footer {
   padding: 20px 16px;
 }
 .footer-text p {
-  color: #707070;
-  font-size: 14px;
+  color: var(--same-texts-color);
+  font-size: var(--same-texts);
   text-align: center;
   line-height: 25px;
 }
 .footer-text p a {
-  color: #3b546e;
+  color: var(--footer-last-text);
   text-decoration: none;
   cursor: pointer;
 }
@@ -200,8 +234,15 @@ footer {
   .web-element-second li img {
     width: 20px;
   }
-  .web-element-second li p {
-    font-size: 14px;
+  .web-element-second li a {
+    font-size: var(--same-texts);
+    text-decoration: none;
+    color: var(--footer-sosial-network-color);
+    cursor: pointer;
+    transition: color 0.5s ease;
+  }
+  .web-element-second li a:hover {
+    color: var(--white-texts-color);
   }
   .sosial-network {
     padding-top: 0;
@@ -237,12 +278,12 @@ footer {
     width: 768px;
   }
   .logoElement img {
-    width: 300px;
+    width: var(--navbar-logo-image-all-pages-res768);
   }
   .logoElement p {
     top: 75px;
     left: 98px;
-    font-size: 14px;
+    font-size: var(--same-texts);
   }
   /* --------------------main------------------ */
   main {
@@ -265,7 +306,7 @@ footer {
   .only-cars-images-container {
     height: 900px;
   }
-  .only-aptel-images-container {
+  .only-aptek-images-container {
     height: 1050px;
     padding-top: 70px;
   }
@@ -276,14 +317,7 @@ footer {
 }
 @media screen and (min-width: 992px) {
   header {
-    background-image: linear-gradient(
-      to right,
-      rgba(32, 40, 119, 0.95),
-      rgba(55, 46, 149, 0.95),
-      rgba(83, 49, 177, 0.9),
-      rgba(114, 48, 205, 0.85),
-      rgba(150, 41, 230, 0.95)
-    );
+    background-image: var(--linear-gradient-background-color);
   }
   header nav {
     width: 992px;
@@ -299,7 +333,7 @@ footer {
   .only-cars-images-container {
     height: 850px;
   }
-  .only-aptel-images-container {
+  .only-aptek-images-container {
     height: 850px;
   }
   /* ------------------footer----------------- */
@@ -339,16 +373,16 @@ footer {
     height: 1200px;
   }
   .only-hr-images-container {
-    height: 950px;
+    height: 1000px;
     padding-top: 20px;
   }
   .only-cars-images-container {
     padding-top: 25px;
   }
   .only-cars-images-container {
-    height: 700px;
+    height: 750px;
   }
-  .only-aptel-images-container {
+  .only-aptek-images-container {
     height: 840px;
     padding-top: 20px;
   }

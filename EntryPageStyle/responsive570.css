@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  /* -------------images-width--------------- */
+  --computer-image-res570: 500px;
+  /* -------------font-sizes--------------- */
+  --mstock-in-entry-first-text-res570: 42px;
+  --mstock-in-entry-second-text-res570: 20px;
+  --header-texts-res570: 37px;
+  --same-texts-res570: 15px;
+  --services-cards-header-text-res570: 20px;
+  --other-pages-headers-under-text-res570: 32px;
+  --packets-header-under-texts-res570: 18px;
+  --packets-cards-header-texts-res570: 20px;
+}
+
+@media screen and (min-width: 570px) {
+  /* -----------------navbar---------------- */
+  .side-bar {
+    padding-top: 22px;
+  }
+  .close-icon {
+    padding-right: 20px;
+  }
+  .menuBar {
+    padding: 25px 0;
+    gap: 20px;
+  }
+  /* ---------------main----------------- */
+  .computer-image img {
+    width: var(--computer-image-res570);
+  }
+  .entry-text-mstock p:first-child {
+    font-size: var(--mstock-in-entry-first-text-res570);
+    line-height: 50px;
+  }
+  .entry-text-mstock p:last-child {
+    font-size: var(--mstock-in-entry-second-text-res570);
+  }
+  .computer-image {
+    padding-top: 100px;
+  }
+  /* ---------------about-us----------------- */
+  .about-us div h2 {
+    font-size: var(--header-texts-res570);
+  }
+  .about-us div p {
+    font-size: var(--same-texts-res570);
+    width: 93%;
+    margin: auto;
+  }
+  /* ---------------services----------------- */
+  .services-container h2 {
+    font-size: var(--header-texts-res570);
+  }
+  .card {
+    width: 250px;
+  }
+  .card h4 {
+    font-size: var(--services-cards-header-text-res570);
+    width: 75%;
+  }
+  .card p {
+    width: 80%;
+    font-size: var(--same-texts-res570);
+  }
+  .services-cards {
+    padding: 0 16px;
+    width: 570px;
+    margin: auto;
+  }
+  /* ---------------other-pages----------------- */
+  .only-images {
+    width: 570px;
+  }
+  .only-text {
+    width: 570px;
+  }
+  .header-text-in-pages h2 {
+    font-size: var(--header-texts-res570);
+  }
+  .header-text-in-pages p {
+    font-size: var(--other-pages-headers-under-text-res570);
+  }
+  .text-parts li p {
+    font-size: var(--same-texts-res570);
+  }
+  /* ---------------packets----------------- */
+  .only-text-packets h2 {
+    font-size: var(--header-texts-res570);
+  }
+  .only-text-packets p {
+    width: 570px;
+    font-size: var(--packets-header-under-texts-res570);
+  }
+  .default-normal-card,
+  .default-hover-card {
+    width: 570px;
+  }
+  .default-normal-card h4,
+  .default-hover-card h4 {
+    font-size: var(--packets-cards-header-texts-res570);
+  }
+  .more-information-element p {
+    font-size: var(--same-texts-res570);
+  }
+  /* ---------------contact----------------- */
+  .contact-texts {
+    width: 570px;
+  }
+  .inputs-container {
+    width: 570px;
+  }
+  .contact-texts h2 {
+    font-size: var(--header-texts-res570);
+  }
+  .contact-texts p {
+    font-size: var(--same-texts-res570);
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  form input {
+    width: 47%;
+    margin-bottom: 0;
+  }
+  form input:first-child {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+  form input:nth-child(3) {
+    margin: 30px 0;
+    margin-right: 32px;
+  }
+  form input:nth-child(4) {
+    margin: 30px 0;
+  }
+  form textarea {
+    margin: 10px 0;
+  }
+  /* ---------------footer----------------- */
+  .footer-wrapper {
+    width: 570px;
+  }
+}

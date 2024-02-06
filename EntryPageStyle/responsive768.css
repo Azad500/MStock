@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  /* -------------images-width--------------- */
+  --logo-in-navbar-res768: 300px;
+  --computer-image-res768: 300px;
+}
+@media screen and (min-width: 768px) {
+  /* ----------------navbar----------------- */
+  header nav {
+    width: 768px;
+  }
+  .logoElement img {
+    width: var(--logo-in-navbar-res768);
+  }
+  .logoElement p {
+    top: 75px;
+    left: 98px;
+  }
+  /* ----------------main----------------- */
+  .text-and-computer-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .computer-img-element {
+    height: 650px;
+  }
+  .entry-text-mstock {
+    width: 430px;
+  }
+  .computer-image img {
+    margin-top: 50px;
+    width: var(--computer-image-res768);
+  }
+  /* ----------------about-us----------------- */
+  .about-us {
+    padding-top: 100px;
+  }
+  .about-us div {
+    max-width: 760px;
+  }
+  /* ----------------services----------------- */
+  .services-cards {
+    width: 768px;
+  }
+  .services-container h2 {
+    padding-top: 100px;
+  }
+  .card {
+    width: 220px;
+    height: 425px;
+  }
+  .c9 {
+    display: block;
+    box-shadow: none;
+  }
+  .c9-image {
+    display: none;
+  }
+  .c9 h4 {
+    display: none;
+  }
+  /* ----------------other-pages----------------- */
+  .only-size {
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .only-images-left-side a {
+    width: 300px;
+  }
+  .only-images-right-side a {
+    width: 300px;
+  }
+  .only-images-left-side {
+    width: 500px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .only-images-right-side {
+    width: 500px;
+    align-items: end;
+    padding-right: 16px;
+  }
+  .text-parts li p {
+    width: 380px;
+  }
+  .left-images {
+    width: 300px;
+  }
+  .only-images button {
+    margin-top: 100px;
+  }
+  /* ----------------packets----------------- */
+  .packets-elements {
+    padding-top: 100px;
+  }
+  .packets-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+  }
+  .default-normal-card,
+  .default-hover-card {
+    width: 230px;
+    height: 920px;
+  }
+  .only-text-packets p {
+    width: 480px;
+  }
+  /* ----------------contact----------------- */
+  .contact-us-container {
+    flex-direction: unset;
+    justify-content: center;
+    align-items: start;
+    padding: 50px 0;
+  }
+  form input {
+    width: 46%;
+  }
+  .contact-texts {
+    width: 300px;
+  }
+  .inputs-container {
+    width: 468px;
+  }
+  /* ----------------footer----------------- */
+  .footer-wrapper {
+    width: 768px;
+  }
+}

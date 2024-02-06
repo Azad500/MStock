@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./Images/faviconMstock.png" />
-    <title>MStock</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="../Images/faviconMstock.png" />
+    <title>MStock MMC</title>
+    <link rel="stylesheet" href="../EntryPageStyle/index.css" />
+    <link rel="stylesheet" href="../EntryPageStyle/responsive471.css" />
+    <link rel="stylesheet" href="../EntryPageStyle/responsive570.css" />
+    <link rel="stylesheet" href="../EntryPageStyle/responsive768.css" />
+    <link rel="stylesheet" href="../EntryPageStyle/responsive992.css" />
+    <link rel="stylesheet" href="../EntryPageStyle/responsive1200.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -22,11 +27,10 @@
   </head>
   <body>
     <!-- ----------------------navbar------------------ -->
-    <!-- <div class="spacer"></div> -->
     <header>
       <nav>
         <div class="logoElement">
-          <img src="./Images/logo-large2.png" alt="Mstock logo image" />
+          <img src="../Images/logo-large2.png" alt="Mstock logo image" />
           <p>"Gələcəyə düzgün istiqamətlə"</p>
         </div>
         <div class="hamburgerBarContainer">
@@ -34,35 +38,35 @@
           <label for="menuToggle" class="fa-solid fa-bars"></label>
           <div class="side-bar">
             <label for="menuToggle" class="close-icon">
-              <img src="./Images/xIcon.png" alt="x icon" />
+              <img src="../Images/xIcon.png" alt="x icon" />
             </label>
             <div class="menuBar">
-              <p>Ana Səhifə</p>
-              <p>Haqqımızda</p>
-              <p>Xidmətlər</p>
-              <p>Layihələr</p>
-              <p>Paketlər</p>
-              <p>Əlaqə</p>
+              <a href="#homePage">Ana Səhifə</a>
+              <a href="#aboutUs">Haqqımızda</a>
+              <a href="#services">Xidmətlər</a>
+              <a href="#projects">Layihələr</a>
+              <a href="#packets">Paketlər</a>
+              <a href="#contactUs">Əlaqə</a>
             </div>
           </div>
         </div>
         <div class="menuForDekstop">
-          <p>Ana Səhifə</p>
-          <p>Haqqımızda</p>
-          <p>Xidmətlər</p>
-          <p>Layihələr</p>
-          <p>Paketlər</p>
-          <p>Əlaqə</p>
+          <a href="#homePage">Ana Səhifə</a>
+          <a href="#aboutUs">Haqqımızda</a>
+          <a href="#services">Xidmətlər</a>
+          <a href="#projects">Layihələr</a>
+          <a href="#packets">Paketlər</a>
+          <a href="#contactUs">Əlaqə</a>
         </div>
       </nav>
     </header>
     <!-- ----------------------main--------------------- -->
     <main>
       <!-- ----------------------computer-image--------------------- -->
-      <div class="computer-img-element">
+      <div id="homePage" class="computer-img-element">
         <div class="text-and-computer-elements">
           <div class="entry-text-mstock">
-            <p>MSTOCK mükəmməl idarəetmə proqramıdır!</p>
+            <p><span>MSTOCK</span> mükəmməl idarəetmə proqramıdır!</p>
             <p>
               Bizim haqqımızda daha çox məlumat əldə edin! Layihələrimiz müasir
               standartlara cavab verəcək şəkildə tərtib olunmuş və işinizə böyük
@@ -70,15 +74,15 @@
             </p>
           </div>
           <div class="computer-image">
-            <img src="./Images/MStockLogin.png" alt="computer image" />
+            <img src="../Images/MStockLogin.png" alt="computer image" />
           </div>
         </div>
         <div class="wave-image">
-          <img src="./Images/hero-bg-shape.svg" alt="wave image" />
+          <img src="../Images/hero-bg-shape.svg" alt="wave image" />
         </div>
       </div>
       <!-- ----------------------about-us---------------------- -->
-      <div class="about-us">
+      <div id="aboutUs" class="about-us">
         <div class="about-us-text">
           <h2>Haqqımızda</h2>
           <p>
@@ -96,7 +100,7 @@
           </p>
         </div>
         <div class="mission-text">
-          <h2>Missiyamız</h2>
+          <h3>Missiyamız</h3>
           <p>
             Şirkətimizin əsas missiyası müştərilərimiz üçün təqdim etdiyimiz
             proqram təminatı və məhsullarının beynəlxalq standartlara cavab
@@ -105,7 +109,7 @@
           </p>
         </div>
         <div class="what-we-do-it-text">
-          <h2>Biz nə edirik?</h2>
+          <h3>Biz nə edirik?</h3>
           <p>
             Müəssisə daxilində proseslərin tez zamanda həyata keçirilməsi üçün
             İnformasiya Texnologiyalarından istifadə edərək iş mühitini daha da
@@ -114,12 +118,12 @@
         </div>
       </div>
       <!-- ----------------------services---------------------- -->
-      <div class="services-container">
+      <div id="services" class="services-container">
         <h2>Xidmətlərimiz</h2>
         <div class="services-cards">
           <div class="card c1">
             <div class="icons-and-image">
-              <img src="./Images/mobile-phone.png" alt="mobile phone" />
+              <img src="../Images/mobile-phone.png" alt="mobile phone" />
             </div>
             <h4>Mobile</h4>
             <p>
@@ -129,7 +133,7 @@
           </div>
           <div class="card c2">
             <div class="icons-and-image">
-              <img src="./Images/globe.png" alt="globe" />
+              <img src="../Images/globe.png" alt="globe" />
             </div>
             <h4>Development</h4>
             <p>
@@ -141,7 +145,7 @@
             <div class="icons-and-image">
               <img
                 class="bezier-image"
-                src="./Images/bezier.png"
+                src="../Images/bezier.png"
                 alt="vector"
               />
             </div>
@@ -155,7 +159,7 @@
             <div class="icons-and-image">
               <img
                 class="server-image"
-                src="./Images/server.png"
+                src="../Images/server.png"
                 alt="server"
               />
             </div>
@@ -164,7 +168,7 @@
           </div>
           <div class="card c5">
             <div class="icons-and-image">
-              <img src="./Images/vision.png" alt="vision" />
+              <img src="../Images/vision.png" alt="vision" />
             </div>
             <h4>SEO Xidməti</h4>
             <p>
@@ -176,7 +180,7 @@
             <div class="icons-and-image">
               <img
                 class="support-image"
-                src="./Images/support.png"
+                src="../Images/support.png"
                 alt="support"
               />
             </div>
@@ -187,7 +191,7 @@
             <div class="icons-and-image">
               <img
                 class="server-image"
-                src="./Images/server.png"
+                src="../Images/server.png"
                 alt="server"
               />
             </div>
@@ -201,7 +205,7 @@
             <div class="icons-and-image">
               <img
                 class="bezier-image"
-                src="./Images/bezier.png"
+                src="../Images/bezier.png"
                 alt="vector"
               />
             </div>
@@ -212,7 +216,7 @@
             <div class="icons-and-image c9-image">
               <img
                 class="bezier-image"
-                src="./Images/bezier.png"
+                src="../Images/bezier.png"
                 alt="vector"
               />
             </div>
@@ -222,22 +226,22 @@
         </div>
       </div>
       <!-- ----------------------other-pages---------------------- -->
-      <div class="other-pages-container">
+      <div id="projects" class="other-pages-container">
         <!-- ---------------------page1-------------------- -->
         <div class="texts-in-left p1">
           <div class="only-size">
             <div class="only-images only-images-left-side">
               <img
                 class="left-images"
-                src="./Images/mstockMenu.png"
+                src="../Images/mstockMenu.png"
                 alt="up image"
               />
               <img
                 class="left-images"
-                src="./Images/debts.png"
+                src="../Images/debts.png"
                 alt="dow image"
               />
-              <a target="_blank" href="ERPPage.html#container">
+              <a target="_blank" href="../PagesHtml/ERPPage.html#container">
                 <button>Ətraflı</button>
               </a>
             </div>
@@ -249,32 +253,32 @@
               <ul class="text-parts">
                 <li>
                   <p>Xüsusi ayrılmış serverlərin quraşdırılması</p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>
                     Elektron sənəd dövriyyəsinin və məlumat mübadiləsinin
                     qurulması
                   </p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>İnsan resurslarının idarə olunması</p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>Daxili mühasibatlıq uçotunun aparılması</p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>
                     Arxiv sənədlər üçün mərkəzləşdirilmiş sistemin qurulması
                   </p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>Məlumat təhlükəsizliyinin təminatı və bərpası</p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
               </ul>
             </div>
@@ -290,21 +294,21 @@
               </div>
               <ul class="text-parts left-side-text-parts">
                 <li>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                   <p>
                     Şirkət daxilində insan resursları sisteminin qurulması və
                     səlahiyyət bölgüsü ilə idarəsi
                   </p>
                 </li>
                 <li>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                   <p>
                     İnsan resursları üçün avtomatlaşdırılmış proseslər, günlük,
                     aylıq və illik hesabatlar
                   </p>
                 </li>
                 <li>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                   <p>
                     Şirkətdaxili əməkdaş icazələri, məzuniyyət, ödənişlərin
                     hesablanması və mühasibatlıqla bağlı problemlərin səmərəli
@@ -312,7 +316,7 @@
                   </p>
                 </li>
                 <li>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                   <p>
                     İşçi məlumatlarının toplanması, arxivlənməsi və qorunması
                   </p>
@@ -320,9 +324,13 @@
               </ul>
             </div>
             <div class="only-images only-images-right-side">
-              <img class="left-images" src="./Images/hr2.png" alt="up image" />
-              <img class="left-images" src="./Images/hr1.png" alt="dow image" />
-              <a target="_blank" href="HRPage.html#container">
+              <img class="left-images" src="../Images/hr2.png" alt="up image" />
+              <img
+                class="left-images"
+                src="../Images/hr1.png"
+                alt="dow image"
+              />
+              <a target="_blank" href="../PagesHtml/HRPage.html#container">
                 <button>Ətraflı</button>
               </a>
             </div>
@@ -334,15 +342,18 @@
             <div class="only-images only-images-left-side">
               <img
                 class="left-images"
-                src="./Images/terminal2.png"
+                src="../Images/terminal2.png"
                 alt="up image"
               />
               <img
                 class="left-images"
-                src="./Images/terminal3.png"
+                src="../Images/terminal3.png"
                 alt="dow image"
               />
-              <a target="_blank" href="LogistikPage.html#container">
+              <a
+                target="_blank"
+                href="../PagesHtml/LogistikPage.html#container"
+              >
                 <button>Ətraflı</button>
               </a>
             </div>
@@ -358,38 +369,38 @@
                     onları idarə edənlərin məlumatlarının toplanması və idarə
                     edilməsi
                   </p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>
                     Məlumat təhlükəsizliyinin və sürətli axtarışın təmini, 7/24
                     texniki dəstəyin göstərilməsi
                   </p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>
                     Proqram təminatında səlahiyyətlərin verilməsi və proqram
                     təminatının səlahiyyətlərə görə dinamik formalaşması
                   </p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>Hesabatların tərtibi və çapı</p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>
                     Kassa və çıxış modullarının tətbiqi, həmçinin rahat
                     istifadəçi interfeysi
                   </p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>
                     Dayanacağın proqram təminatında real vaxt rejimində tətbiqi
                   </p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
               </ul>
             </div>
@@ -411,32 +422,32 @@
               </div>
               <ul class="text-parts left-side-text-parts">
                 <li>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                   <p>
                     Nəqliyyat vasitələlərinin elanlarını daha rahat və sürətli
                     paylaşın
                   </p>
                 </li>
                 <li>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                   <p>
                     Admin panel vasitəsilə bütün elanların idarəsini həyata
                     keçirin
                   </p>
                 </li>
                 <li>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                   <p>
                     Rahat istifadəçi interfeysi ilə axtardığınız nəqliyyat
                     vasitəsinə daha tez nail olun
                   </p>
                 </li>
                 <li>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                   <p>Avtosalon idarəsini kəşf edin</p>
                 </li>
                 <li>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                   <p>
                     Nəqliyyat vasitələrinin ehtiyyat hissələri və
                     aksessuarlarının satışı
@@ -447,10 +458,10 @@
             <div class="only-images only-images-right-side">
               <img
                 class="left-images"
-                src="./Images/961minik.png"
+                src="../Images/961minik.png"
                 alt="minik image"
               />
-              <a target="_blank" href="Cars.html#container">
+              <a target="_blank" href="../PagesHtml/Cars.html#container">
                 <button>Ətraflı</button>
               </a>
             </div>
@@ -462,10 +473,10 @@
             <div class="only-images only-images-left-side">
               <img
                 class="left-images"
-                src="./Images/961AptekSayt.png"
+                src="../Images/961AptekSayt.png"
                 alt="aptek image"
               />
-              <a target="_blank" href="Aptek.html#container">
+              <a target="_blank" href="../PagesHtml/Aptek.html#container">
                 <button>Ətraflı</button>
               </a>
             </div>
@@ -479,23 +490,23 @@
                     Evdən çıxmadan, istədiyiniz tibbi ləvazimatların rahat
                     sifarişi
                   </p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>Qısa zamanda olduğunuz ünvana çatdırılma</p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>Kart vasitəsilə rahat ödəniş sistemi</p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>Vaxt itkisinin aradan qaldırılması</p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
                 <li>
                   <p>Hər kateqoriyaya uyğun dərmanların rahat axtarışı</p>
-                  <img src="./Images/check-box.png" alt="check-box" />
+                  <img src="../Images/check-box.png" alt="check-box" />
                 </li>
               </ul>
             </div>
@@ -508,7 +519,7 @@
         </div>
       </div>
       <!-- ----------------------packets---------------------- -->
-      <div class="packets-container">
+      <div id="packets" class="packets-container">
         <div class="only-background-shape">
           <div class="packets-elements">
             <div class="only-text-packets">
@@ -524,7 +535,7 @@
                 <div class="basic-image-element">
                   <img
                     class="basicImage"
-                    src="./Images/basic.svg"
+                    src="../Images/basic.svg"
                     alt="basic image in card"
                   />
                 </div>
@@ -542,7 +553,7 @@
                 <div class="basic-image-element">
                   <img
                     class="basicImage"
-                    src="./Images/basic.svg"
+                    src="../Images/basic.svg"
                     alt="basic image in card"
                   />
                 </div>
@@ -561,7 +572,7 @@
                 <div class="basic-image-element">
                   <img
                     class="basicImage"
-                    src="./Images/basic.svg"
+                    src="../Images/basic.svg"
                     alt="basic image in card"
                   />
                 </div>
@@ -586,14 +597,14 @@
             <div class="more-information-element">
               <p>
                 Ətraflı məlumat əldə etmək istəyirsiniz?
-                <a href="">Bizə yazın</a>
+                <a href="#contactUs">Bizə yazın</a>
               </p>
             </div>
           </div>
         </div>
       </div>
       <!-- ----------------------contact------------------- -->
-      <div class="contact-us-container">
+      <div id="contactUs" class="contact-us-container">
         <div class="contact-texts">
           <h2>Sualınız Var?</h2>
           <p>
@@ -601,7 +612,7 @@
             bilərsiniz. Sorğunuz əməkdaşlarımız tərəfindən ən qısa zaman ərzində
             cavablandırılacaq.
           </p>
-          <p>Email : <a href="">info@mstock.az</a></p>
+          <p>Email : <a href="mailto:info@mstock.az">info@mstock.az</a></p>
         </div>
         <div class="inputs-container">
           <p>Bizə yazın</p>
@@ -611,6 +622,7 @@
               name="FullName"
               id="full-name"
               placeholder="Ad, soyad"
+              required
             />
             <input
               type="email"
@@ -645,7 +657,7 @@
         <div class="footer-element">
           <div class="footer-wrapper">
             <div class="mstock-footer-logo">
-              <img src="./Images/logo-large2.png" alt="mstock logo" />
+              <img src="../Images/logo-large2.png" alt="mstock logo" />
             </div>
             <div class="contact-informations">
               <div class="mail-and-web-elements">
@@ -654,32 +666,38 @@
                     <p>Texniki Dəstək</p>
                   </li>
                   <li>
-                    <img src="./Images/mail.png" alt="mail image" />
-                    <p>info@mstock.az</p>
+                    <img src="../Images/mail.png" alt="mail image" />
+                    <a href="mailto:info@mstock.az">info@mstock.az</a>
                   </li>
                 </ul>
                 <ul class="web-element-first">
                   <li>
-                    <img src="./Images/globe.png" alt="mail image" />
-                    <p>www.mstock.az</p>
+                    <img src="../Images/globe.png" alt="mail image" />
+                    <a href="#homePage">www.mstock.az</a>
                   </li>
                 </ul>
               </div>
               <ul class="web-element-second">
                 <li>
-                  <img src="./Images/globe.png" alt="mail image" />
-                  <p>www.mstock.az</p>
+                  <img src="../Images/globe.png" alt="mail image" />
+                  <a href="#homePage">www.mstock.az</a>
                 </li>
               </ul>
               <ul class="sosial-network">
                 <li>
-                  <img src="./Images/facebook.png" alt="facebook icon" />
+                  <a href="">
+                    <img src="../Images/facebook.png" alt="facebook icon" />
+                  </a>
                 </li>
                 <li>
-                  <img src="./Images/twitter.png" alt="twitter icon" />
+                  <a href="">
+                    <img src="../Images/twitter.png" alt="twitter icon" />
+                  </a>
                 </li>
                 <li>
-                  <img src="./Images/instagram.png" alt="instagram icon" />
+                  <a href="">
+                    <img src="../Images/instagram.png" alt="instagram icon" />
+                  </a>
                 </li>
               </ul>
             </div>

@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  /* -------------colors--------------- */
+  --white-color-for-texts: white;
+  --navbar-texts-color-res992: rgba(255, 255, 255, 0.821);
+  /* -------------images-width--------------- */
+  --navbar-text-res992: 18px;
+}
+@media screen and (min-width: 992px) {
+  /* -----------------navbar------------------ */
+  header {
+    background-color: transparent;
+    /* -----------------js-kodu-------------- */
+    /* background-image: linear-gradient(
+        to right,
+        rgba(32, 40, 119, 0.95),
+        rgba(55, 46, 149, 0.95),
+        rgba(83, 49, 177, 0.9),
+        rgba(114, 48, 205, 0.85),
+        rgba(150, 41, 230, 0.95)
+      ); */
+  }
+  header nav {
+    width: 992px;
+  }
+  .hamburgerBarContainer {
+    display: none;
+  }
+  .menuForDekstop {
+    display: flex;
+    gap: 25px;
+    padding: 0 10px;
+  }
+  .menuForDekstop a {
+    text-decoration: none;
+    color: var(--navbar-texts-color-res992);
+    font-size: var(--navbar-text-res992);
+    transition: transform 0.3s ease;
+  }
+  .menuForDekstop a:hover {
+    transform: scale(1.1);
+    color: var(--white-color-for-texts);
+  }
+  /* -----------------main------------------ */
+  .computer-img-element {
+    height: 810px;
+    padding: 0;
+  }
+  .text-and-computer-elements {
+    width: 980px;
+    padding: 0;
+  }
+  .entry-text-mstock {
+    width: 400px;
+  }
+  .computer-image {
+    margin-top: 40px;
+  }
+  .computer-image img {
+    width: 400px;
+  }
+  /* -----------------about-us------------------ */
+  .about-us div {
+    max-width: 980px;
+  }
+  .about-us div p {
+    width: 98%;
+  }
+  /* -----------------services------------------ */
+  .card {
+    width: 220px;
+    height: 450px;
+  }
+  .services-cards {
+    width: 992px;
+  }
+  .c9 {
+    display: none;
+  }
+  /* -----------------other-pages------------------ */
+  .only-text {
+    padding-right: 16px;
+    height: 650px;
+  }
+  .only-text-left-side {
+    padding-left: 16px;
+  }
+  .header-text-in-pages {
+    padding-right: 0;
+  }
+  .header-text-in-pages p {
+    padding-left: 0;
+  }
+  .left-side-text h2 {
+    padding-left: 0;
+  }
+  .text-parts {
+    list-style: none;
+    padding: 50px 0 0 0;
+  }
+  .left-images {
+    width: 350px;
+  }
+  .only-size {
+    width: 992px;
+  }
+  .only-images-left-side a {
+    width: 460px;
+  }
+  .only-images-right-side a {
+    width: 400px;
+  }
+  /* -----------------packets------------------ */
+  .only-text-packets p {
+    width: 100%;
+  }
+  .default-normal-card,
+  .default-hover-card {
+    width: 300px;
+    height: 850px;
+  }
+  /* -----------------contact------------------ */
+  .contact-us-container {
+    padding: 100px 16px;
+  }
+  form input {
+    width: 47.2%;
+  }
+  .contact-texts {
+    width: 388px;
+  }
+  .inputs-container {
+    width: 604px;
+  }
+  /* -----------------footer------------------ */
+  .footer-wrapper {
+    width: 992px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .mstock-footer-logo img {
+    width: 220px;
+  }
+  .contact-informations {
+    width: 600px;
+  }
+}
